@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+
+
+/* ---------- CSS Variables ---------- */
+:root{
+  --primary:#0F5132;
+  --secondary:#8B4513;
+  --accent:#D4AF37;
+  --background:#F8F5F0;
+  --text:#222222;
+
+  --heading-font:"Cinzel",serif;
+  --body-font:"Poppins",sans-serif;
+}
+
+/* ---------- Reset ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:var(--background);
+    color:var(--text);
+    font-family:var(--body-font);
+}
+
+img{
+
+    width:100%;
+    display:block;
+}
+
+a{
+
+    text-decoration:none;
+    color:inherit;
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+ul{
+
+    list-style:none;
+}
+
+.container{
+
+    width:min(1280px,90%);
+    margin:auto;
+}
+
+.section{
+
+    padding:90px 0;
+}
+
+.heading{
+
+    font-family:var(--heading-font);
+}
+
+.primary{
+
+    color:var(--primary);
+}
+
+.gold{
+
+    color:var(--accent);
+}
