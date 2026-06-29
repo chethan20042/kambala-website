@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import History from "./components/History";
 import Types from "./components/Types";
+import Events from "./components/Events";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <About />
       <History />
       <Types />
+      <Events />
     </>
   );
 }
