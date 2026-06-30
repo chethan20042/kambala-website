@@ -1,9 +1,9 @@
-function Gallery() {
+function News() {
   return (
     <div className="section container">
-      <h1>Gallery</h1>
+      <h1>Latest News</h1>
     </div>
   );
 }
 
-export default Gallery;
+export default News;
