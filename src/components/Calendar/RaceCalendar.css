@@ -1,0 +1,121 @@
+.calendar {
+  background: #f8fafc;
+  padding: 80px 0;
+}
+
+.calendar-controls {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.calendar-controls input,
+.calendar-controls select {
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 15px;
+  min-width: 220px;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fff;
+}
+
+.calendar-controls input:focus,
+.calendar-controls select:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.calendar-table-wrapper {
+  overflow-x: auto;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.calendar-table thead {
+  background: linear-gradient(135deg, #8b0000, #c0392b);
+  color: white;
+}
+
+.calendar-table th {
+  padding: 18px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.calendar-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #ececec;
+  font-size: 15px;
+  color: #333;
+}
+
+.calendar-table tbody tr {
+  transition: 0.25s ease;
+}
+
+.calendar-table tbody tr:hover {
+  background: #fff6f3;
+  transform: scale(1.005);
+}
+
+.status {
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.upcoming {
+  background: #d4edda;
+  color: #0f5132;
+}
+
+.status.completed {
+  background: #e2e3e5;
+  color: #41464b;
+}
+
+.status.cancelled {
+  background: #f8d7da;
+  color: #842029;
+}
+
+@media (max-width: 992px) {
+  .calendar-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calendar-controls input,
+  .calendar-controls select {
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    padding: 60px 0;
+  }
+
+  .calendar-table th,
+  .calendar-table td {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

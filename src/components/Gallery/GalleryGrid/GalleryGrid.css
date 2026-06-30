@@ -1,0 +1,36 @@
+.gallery-grid-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+}
+
+.gallery-view-btn{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:15px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.gallery-view-btn:hover{
+
+    background:var(--accent);
+
+    color:black;
+}
