@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  padding-top: 68px; /* navbar height offset */
+  padding-top: 70px; /* navbar height offset */
   font-family: var(--hero-font);
 }
 
@@ -27,7 +27,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 80px 56px 80px 80px;
-  gap: 0;
 }
 
 /* Eyebrow */
@@ -65,8 +64,6 @@
   line-height: 0.92;
   color: var(--hero-text);
   margin: 0 0 28px;
-
-  /* Signature element: green left-edge stroke */
   padding-left: 24px;
   border-left: 5px solid var(--hero-accent);
 }
@@ -80,49 +77,15 @@
   margin: 0 0 40px;
 }
 
-/* ─── Action Buttons ─────────────────────────────────── */
+/* ─── Action Buttons row ──────────────────────────────── */
+/* Button styling itself lives in components/UI/Button.css —
+   this just controls layout/spacing of the row */
 .hero-actions {
   display: flex;
   align-items: center;
   gap: 14px;
   margin-bottom: 56px;
   flex-wrap: wrap;
-}
-
-.btn-primary {
-  padding: 13px 28px;
-  background: var(--hero-accent);
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
-}
-
-.btn-primary:hover {
-  background: #245a41;
-  transform: translateY(-1px);
-}
-
-.btn-ghost {
-  padding: 13px 28px;
-  background: transparent;
-  color: var(--hero-text);
-  border: 1.5px solid var(--hero-border);
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
-}
-
-.btn-ghost:hover {
-  border-color: var(--hero-accent);
-  color: var(--hero-accent);
-  background: var(--hero-accent-light);
 }
 
 /* ─── Stats Row ──────────────────────────────────────── */
@@ -182,7 +145,6 @@
   transform: scale(1.03);
 }
 
-/* Subtle dark gradient at bottom of image */
 .hero-image-panel::after {
   content: "";
   position: absolute;
@@ -195,7 +157,6 @@
   pointer-events: none;
 }
 
-/* Badge floating over image */
 .image-badge {
   position: absolute;
   bottom: 28px;

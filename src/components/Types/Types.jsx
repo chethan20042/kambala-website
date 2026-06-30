@@ -21,21 +21,24 @@ function Types() {
               whileHover={{ y: -10 }}
               transition={{ duration: 0.3 }}
             >
-              <img
-                src={type.image}
-                alt={type.title}
-                className="type-image"
-              />
+              <div className="type-image-wrapper">
+                <img
+                  src={type.image}
+                  alt={type.title}
+                  className="type-image"
+                />
+              </div>
 
               <div className="type-content">
                 <h3>{type.title}</h3>
 
                 <p>{type.description}</p>
 
-                <span>{type.fact}</span>
+                <span className="type-fact">{type.fact}</span>
 
                 <button className="learn-btn">
-                  Learn More →
+                  Learn More
+                  <span className="learn-btn-arrow">→</span>
                 </button>
               </div>
             </motion.article>

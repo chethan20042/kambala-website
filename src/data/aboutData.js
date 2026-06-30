@@ -11,7 +11,7 @@ const aboutData = [
     icon: FaLandmark,
     title: "Rich History",
     description:
-      "Kambala has been celebrated for centuries as a traditional buffalo race in the coastal districts of Karnataka.",
+      "For centuries, Kambala has thrived as a traditional buffalo race deeply rooted in the coastal districts of Karnataka.",
   },
 
   {
@@ -19,7 +19,7 @@ const aboutData = [
     icon: FaLeaf,
     title: "Agricultural Heritage",
     description:
-      "Originally conducted to honor agriculture and pray for a prosperous harvest season.",
+      "Born from a farming tradition, the race was originally held to honor the land and pray for a bountiful harvest.",
   },
 
   {
@@ -27,7 +27,7 @@ const aboutData = [
     icon: FaFlag,
     title: "Cultural Pride",
     description:
-      "Today Kambala represents the identity and pride of Tulunadu and Coastal Karnataka.",
+      "Today, Kambala stands as a powerful symbol of identity and pride for the people of Tulunadu and Coastal Karnataka.",
   },
 
   {
@@ -35,7 +35,7 @@ const aboutData = [
     icon: FaHandsHelping,
     title: "Community Spirit",
     description:
-      "Villagers unite to celebrate tradition, sportsmanship, and devotion during Kambala festivals.",
+      "Villagers come together each season to celebrate tradition, sportsmanship, and devotion through the festival.",
   },
 ];
 

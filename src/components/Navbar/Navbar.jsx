@@ -158,16 +158,21 @@ function Navbar() {
             <button
               type="button"
               className="nav-cta"
+              onClick={() => handleNavigation({ type: "page", path: "/register" })}
             >
               Register Now
             </button>
 
             <button
               type="button"
-              className="menu-btn"
+              className={`menu-btn ${menuOpen ? "menu-btn--open" : ""}`}
               onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
             >
-              ☰
+              <span className="burger-line" />
+              <span className="burger-line" />
+              <span className="burger-line" />
             </button>
           </div>
         </div>
@@ -193,7 +198,10 @@ function Navbar() {
           <button
             type="button"
             className="mobile-cta"
-            onClick={() => setMenuOpen(false)}
+            onClick={() => {
+              setMenuOpen(false);
+              handleNavigation({ type: "page", path: "/register" });
+            }}
           >
             Register Now
           </button>
